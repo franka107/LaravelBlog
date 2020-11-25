@@ -66707,13 +66707,13 @@ var staticRenderFns = [
         _c("div", { staticClass: "_overflow _table_div" }, [
           _c("table", { staticClass: "_table" }, [
             _c("tr", [
-              _c("th", [_vm._v("Date")]),
+              _c("th", [_vm._v("ID")]),
               _vm._v(" "),
-              _c("th", [_vm._v("Title")]),
+              _c("th", [_vm._v("Nombre")]),
               _vm._v(" "),
-              _c("th", [_vm._v("Category")]),
+              _c("th", [_vm._v("Creado en")]),
               _vm._v(" "),
-              _c("th", [_vm._v("Action")])
+              _c("th", [_vm._v("Actualizado en")])
             ]),
             _vm._v(" "),
             _c("tr", [

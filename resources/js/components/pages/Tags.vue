@@ -12,10 +12,10 @@
                         <table class="_table">
                             <!-- TABLE TITLE -->
                             <tr>
-                                <th>Date</th>
-                                <th>Title</th>
-                                <th>Category</th>
-                                <th>Action</th>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Creado en</th>
+                                <th>Actualizado en</th>
                             </tr>
                             <!-- TABLE TITLE -->
 
