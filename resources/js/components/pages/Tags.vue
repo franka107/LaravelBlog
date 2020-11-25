@@ -6,7 +6,7 @@
                 <div
                     class="_1adminOverveiw_table_recent _box_shadow _border_radious _mar_b30 _p20"
                 >
-                    <p class="_title0">Recent News</p>
+                  <p class="_title0">Tags <Button @click="addModal=true"><Icon type="md-add-circle"/>Añadir Tag</Button></p>
 
                     <div class="_overflow _table_div">
                         <table class="_table">
@@ -14,222 +14,21 @@
                             <tr>
                                 <th>ID</th>
                                 <th>Nombre</th>
-                                <th>Creado en</th>
-                                <th>Actualizado en</th>
+                                <th>Fecha de creación</th>
+                                <th>Actualizado por ultima vez</th>
+                                <th>Acciones</th>
                             </tr>
                             <!-- TABLE TITLE -->
 
                             <!-- ITEMS -->
-                            <tr>
-                                <td>25-05-19</td>
-                                <td class="_table_name">
-                                    Manhattan's art center "Shed" opening
-                                    ceremony
-                                </td>
-                                <td>Economy</td>
+                            <tr v-for="tag in tags" v-show="tags.length" :key="tag.id">
+                                <td>{{tag.id}}</td>
+                                <td class="_table_name">{{tag.tagName}}</td>
+                                <td>{{tag.created_at}}</td>
+                                <td>{{tag.updated_at}}</td>
                                 <td>
-                                    <button
-                                        class="_btn _action_btn view_btn1"
-                                        type="button"
-                                    >
-                                        View
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn edit_btn1"
-                                        type="button"
-                                    >
-                                        Edit
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn2"
-                                        type="button"
-                                    >
-                                        Make Features
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn3"
-                                        type="button"
-                                    >
-                                        Make Card
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn1"
-                                        type="button"
-                                    >
-                                        Delete
-                                    </button>
-                                </td>
-                            </tr>
-                            <!-- ITEMS -->
-
-                            <!-- ITEMS -->
-                            <tr>
-                                <td>25-05-19</td>
-                                <td class="_table_name">
-                                    Are Trump era is having an impact on what 's
-                                    future voters
-                                </td>
-                                <td>Social</td>
-                                <td>
-                                    <button
-                                        class="_btn _action_btn view_btn1"
-                                        type="button"
-                                    >
-                                        View
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn edit_btn1"
-                                        type="button"
-                                    >
-                                        Edit
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn2"
-                                        type="button"
-                                    >
-                                        Make Features
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn3"
-                                        type="button"
-                                    >
-                                        Make Card
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn1"
-                                        type="button"
-                                    >
-                                        Delete
-                                    </button>
-                                </td>
-                            </tr>
-                            <!-- ITEMS -->
-
-                            <!-- ITEMS -->
-                            <tr>
-                                <td>25-05-19</td>
-                                <td class="_table_name">
-                                    Manhattan's art center "Shed" opening
-                                    ceremony
-                                </td>
-                                <td>Economy</td>
-                                <td>
-                                    <button
-                                        class="_btn _action_btn view_btn1"
-                                        type="button"
-                                    >
-                                        View
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn edit_btn1"
-                                        type="button"
-                                    >
-                                        Edit
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn2"
-                                        type="button"
-                                    >
-                                        Make Features
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn3"
-                                        type="button"
-                                    >
-                                        Make Card
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn1"
-                                        type="button"
-                                    >
-                                        Delete
-                                    </button>
-                                </td>
-                            </tr>
-                            <!-- ITEMS -->
-
-                            <!-- ITEMS -->
-                            <tr>
-                                <td>25-05-19</td>
-                                <td class="_table_name">
-                                    Are Trump era is having an impact on what 's
-                                    future voters
-                                </td>
-                                <td>Social</td>
-                                <td>
-                                    <button
-                                        class="_btn _action_btn view_btn1"
-                                        type="button"
-                                    >
-                                        View
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn edit_btn1"
-                                        type="button"
-                                    >
-                                        Edit
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn2"
-                                        type="button"
-                                    >
-                                        Make Features
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn3"
-                                        type="button"
-                                    >
-                                        Make Card
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn1"
-                                        type="button"
-                                    >
-                                        Delete
-                                    </button>
-                                </td>
-                            </tr>
-                            <!-- ITEMS -->
-
-                            <!-- ITEMS -->
-                            <tr>
-                                <td>25-05-19</td>
-                                <td class="_table_name">
-                                    Are Trump era is having an impact on what 's
-                                    future voters
-                                </td>
-                                <td>Social</td>
-                                <td>
-                                    <button
-                                        class="_btn _action_btn view_btn1"
-                                        type="button"
-                                    >
-                                        View
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn edit_btn1"
-                                        type="button"
-                                    >
-                                        Edit
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn2"
-                                        type="button"
-                                    >
-                                        Make Features
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn3"
-                                        type="button"
-                                    >
-                                        Make Card
-                                    </button>
-                                    <button
-                                        class="_btn _action_btn make_btn1"
-                                        type="button"
-                                    >
-                                        Delete
-                                    </button>
+                                    <Button type="info" size="small">Editar</Button>
+                                    <Button type="error" size="small">Eliminar</Button>
                                 </td>
                             </tr>
                             <!-- ITEMS -->
@@ -237,7 +36,57 @@
                     </div>
                 </div>
                 <Page :total="100" />
+
+                <!-- Tag adding modal-->
+                <Modal
+                  v-model="addModal"
+                  title="Añadir tag"
+                  :mask-closable="false"
+                  :closable = "false"
+                >
+                  <Input v-model="data.tagName" placeholder="Ingresa el nombre del tag" style="width: 300px"/> 
+                  <div slot="footer">
+                    <Button type="default" @click="addModal = false">Cerrar</Button>
+                    <Button type="primary" @click="addTag" :disabled="isAdding" :loading="isAdding">{{ isAdding ? 'Adding..' : 'Añadir Tag'}}</Button>
+                  </div>
+                </Modal>
             </div>
         </div>
     </div>
 </template>
+
+<script>
+export default {
+  data(){
+    return {
+      data: {
+        tagName: ''
+      },
+      addModal : false,
+      isAdding : false,
+      tags: []
+    }
+  },
+  methods:{
+    async addTag(){
+      if(this.data.tagName.trim() == '') return this.e('El nombre del tag es requerido.')
+      const res = await this.callApi('post', 'app/create_tag', this.data)
+      if(res.status === 201) {
+        this.s('El tag fue añadido exitosamente')
+        this.addModal = false
+      } else {
+        this.swr()
+      }
+    }
+  },
+  async created(){
+    let res = await this.callApi('get', 'app/get_tags')
+    
+		if(res.status==200){
+			this.tags = res.data
+		}else{
+			this.swr()
+		}
+	},
+}
+</script>

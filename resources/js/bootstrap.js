@@ -1,17 +1,5 @@
 window._ = require('lodash');
 
-window.Vue = require('vue');
-import router from './router';
-import ViewUI from 'view-design';
-import 'view-design/dist/styles/iview.css';
-
-Vue.use(ViewUI);
-
-Vue.component('App', require('./components/App.vue').default);
-const app = new Vue({
-    'el': '#app',
-    router
-});
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
  * to our Laravel back-end. This library automatically handles sending the
